@@ -1,25 +1,25 @@
 class TaskRunnerDetector < Formula
   desc "Detect and run tasks from various task runner config files"
   homepage "https://github.com/elob/task-runner-detector"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/elob/task-runner-detector/releases/download/v0.1.0/task-runner-detector-aarch64-apple-darwin.tar.xz"
-      sha256 "7ad5a0ba2343bf1314bda6c25b0d0ca7850cc5c999844c9eafeeaf43090e31a2"
+      url "https://github.com/elob/task-runner-detector/releases/download/v0.2.0/task-runner-detector-aarch64-apple-darwin.tar.xz"
+      sha256 "d004baa69cd5e8ec9906055eecfc95eae89346b18951a294ec206ae459809cfa"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elob/task-runner-detector/releases/download/v0.1.0/task-runner-detector-x86_64-apple-darwin.tar.xz"
-      sha256 "3d4bf2baf92222e437c8bbe581072ca0a011fec725941103e8d0b0808eaac28c"
+      url "https://github.com/elob/task-runner-detector/releases/download/v0.2.0/task-runner-detector-x86_64-apple-darwin.tar.xz"
+      sha256 "cd2d340c21a418dcaba735ee8da00d3411c8132e2be82bfc796b92133c9bb1ba"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/elob/task-runner-detector/releases/download/v0.1.0/task-runner-detector-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "2ac6eb9b2f785609f09c7e2b863738dd625beb63008f0961d5a4d0202ec1ebbb"
+      url "https://github.com/elob/task-runner-detector/releases/download/v0.2.0/task-runner-detector-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7fcc8783de667789b1fcc6be50f467bc5bec6d8aec8cb947e378b1e4f9fa31ae"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elob/task-runner-detector/releases/download/v0.1.0/task-runner-detector-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "dc228dc4c8cf79d44469feb6f7caa84c3ba5800ce968aa0fdefcadde04c991d5"
+      url "https://github.com/elob/task-runner-detector/releases/download/v0.2.0/task-runner-detector-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "5ec99bcdd410cebc0d36e7faf8c92360c29a1e57f9662facbb5e41c21915ef89"
     end
   end
   license "MIT"
