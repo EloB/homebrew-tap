@@ -1,25 +1,25 @@
 class Quickertype < Formula
   desc "Rust port of quicktype: generate types and converters from JSON and schemas"
   homepage "https://github.com/EloB/quickertype"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/EloB/quickertype/releases/download/v0.1.0/quickertype-aarch64-apple-darwin.tar.xz"
-      sha256 "0dc455dedd8ddd2043b7a48af7e13432f081e0c2327ebbac3389593139d193f8"
+      url "https://github.com/EloB/quickertype/releases/download/v0.2.0/quickertype-aarch64-apple-darwin.tar.xz"
+      sha256 "c74adb203aefefccb9dbec57d9e63b5faacf966c8afaf0a30e0adff2f468a4a0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/EloB/quickertype/releases/download/v0.1.0/quickertype-x86_64-apple-darwin.tar.xz"
-      sha256 "49f219339361dd2836fe8f444c6a1719550794b434b1e12b10d86db52294bc31"
+      url "https://github.com/EloB/quickertype/releases/download/v0.2.0/quickertype-x86_64-apple-darwin.tar.xz"
+      sha256 "6ba560db90d143927222ed261daf079cd8515158a937880aa59d2170313a2f38"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/EloB/quickertype/releases/download/v0.1.0/quickertype-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "68c9e73ff0dd2d9d55e0a8d18e0b11b38a2e9d720edaf4777b96c58cbb0f4524"
+      url "https://github.com/EloB/quickertype/releases/download/v0.2.0/quickertype-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2786a2e4cb661302b0be6ac7205c5a1cb34e3e4e0721657fe422a67ed5fc0beb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/EloB/quickertype/releases/download/v0.1.0/quickertype-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "370d064519e00f7f3141d877f17192d2be05952e6b7f690bbfc0aa5c6ffed0e7"
+      url "https://github.com/EloB/quickertype/releases/download/v0.2.0/quickertype-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "1a763764ec66925450434c0e03501dd0c3a250f5755f80dc56e563560500e9e2"
     end
   end
   license "Apache-2.0"
@@ -51,16 +51,16 @@ class Quickertype < Formula
 
   def install
     if OS.mac? && Hardware::CPU.arm?
-      bin.install "quicktype"
+      bin.install "quickertype"
     end
     if OS.mac? && Hardware::CPU.intel?
-      bin.install "quicktype"
+      bin.install "quickertype"
     end
     if OS.linux? && Hardware::CPU.arm?
-      bin.install "quicktype"
+      bin.install "quickertype"
     end
     if OS.linux? && Hardware::CPU.intel?
-      bin.install "quicktype"
+      bin.install "quickertype"
     end
 
     install_binary_aliases!
