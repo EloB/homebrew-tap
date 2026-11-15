@@ -1,25 +1,25 @@
 class Quickertype < Formula
   desc "Rust port of quicktype: generate types and converters from JSON and schemas"
   homepage "https://github.com/EloB/quickertype"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/EloB/quickertype/releases/download/v0.2.0/quickertype-aarch64-apple-darwin.tar.xz"
-      sha256 "c74adb203aefefccb9dbec57d9e63b5faacf966c8afaf0a30e0adff2f468a4a0"
+      url "https://github.com/EloB/quickertype/releases/download/v0.3.0/quickertype-aarch64-apple-darwin.tar.xz"
+      sha256 "a7fd16e14a8fe2db7bfcd11a914cd14b0106bbc24e2c30e0c439c02d85ad544b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/EloB/quickertype/releases/download/v0.2.0/quickertype-x86_64-apple-darwin.tar.xz"
-      sha256 "6ba560db90d143927222ed261daf079cd8515158a937880aa59d2170313a2f38"
+      url "https://github.com/EloB/quickertype/releases/download/v0.3.0/quickertype-x86_64-apple-darwin.tar.xz"
+      sha256 "256bae32fa387d362ad517c1e5ef3fba02769a52ad5dfb082e42b1c8aca15dae"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/EloB/quickertype/releases/download/v0.2.0/quickertype-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "2786a2e4cb661302b0be6ac7205c5a1cb34e3e4e0721657fe422a67ed5fc0beb"
+      url "https://github.com/EloB/quickertype/releases/download/v0.3.0/quickertype-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9b9ff01147128a394b5df5e768faaf92d73fd8b7a5c7660e45f1aa76b019fd23"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/EloB/quickertype/releases/download/v0.2.0/quickertype-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "1a763764ec66925450434c0e03501dd0c3a250f5755f80dc56e563560500e9e2"
+      url "https://github.com/EloB/quickertype/releases/download/v0.3.0/quickertype-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "218e763735fa4e1da7552e8facbbad2c7c14dcc5b412d630c90baede648c1441"
     end
   end
   license "Apache-2.0"
